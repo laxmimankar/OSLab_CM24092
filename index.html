@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LRU Simulator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🧠 LRU Page Replacement</h1>
+    <p>Interactive OS Simulator</p>
+</header>
+
+<div class="container">
+
+    <!-- Theory Card -->
+    <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2103/2103633.png">
+        <h2>What is LRU?</h2>
+        <p>
+            LRU replaces the page that has not been used for the longest time.
+            It improves memory efficiency by keeping recently used pages.
+        </p>
+    </div>
+
+    <!-- Input Card -->
+    <div class="card">
+        <h2>Run Simulation</h2>
+
+        <input type="text" id="pages" placeholder="Enter pages (e.g. 7 0 1 2 0 3)">
+        <input type="number" id="frames" placeholder="Enter frames">
+
+        <button onclick="runLRU()">🚀 Run Algorithm</button>
+    </div>
+
+    <!-- Output Card -->
+    <div class="card output">
+        <h2>Output</h2>
+        <div id="result"></div>
+        <h3 id="faults"></h3>
+    </div>
+
+</div>
+
+<footer>
+    <p>Made By Laxmi Mankar</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
